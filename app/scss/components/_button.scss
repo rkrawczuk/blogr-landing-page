@@ -1,0 +1,21 @@
+@import "../abstract/variables";
+
+.btn {
+  font-size: 1.125rem;
+  font-weight: $font-bold;
+  border-radius: 10rem;
+
+  &--gradient {
+    padding: 1.125rem 3rem;
+    color: $color-white;
+    background: linear-gradient(
+      to right,
+      $gradient-very-light-red,
+      $gradient-light-red
+    );
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

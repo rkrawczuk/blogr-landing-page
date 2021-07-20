@@ -1,3 +1,6 @@
+:root {
+  --header-height: 5rem;
+}
 // --- COLORS ---
 
 // primary
@@ -20,3 +23,7 @@ $dark-desaturated-blue: hsl(237, 23%, 32%);
 
 // --- TYPOGRAPHY ---
 $text-font-size: 16px;
+
+// Font weight
+$font-light: 300;
+$font-bold: 600;
