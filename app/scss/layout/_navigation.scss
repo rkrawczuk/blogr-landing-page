@@ -9,7 +9,7 @@
   margin-top: 2rem;
 }
 
-.header {
+.navigation {
   background-color: $light-red;
   width: 100%;
   position: fixed;
@@ -48,8 +48,6 @@
 
   &__toggle {
     cursor: pointer;
-  }
-  &__list {
   }
 
   &__item {

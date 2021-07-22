@@ -70,7 +70,7 @@ a:hover {
   margin-top: 2rem;
 }
 
-.header {
+.navigation {
   background-color: #ff525d;
   width: 100%;
   position: fixed;
@@ -185,5 +185,9 @@ a:hover {
 
 .show-menu {
   top: calc(var(--header-height) + 2rem);
+}
+
+:root {
+  --header-height: 5rem;
 }
 /*# sourceMappingURL=style.css.map */
