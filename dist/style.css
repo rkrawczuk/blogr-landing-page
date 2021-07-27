@@ -38,6 +38,26 @@ a:hover {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  padding: 0;
+  font-size: 100%;
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1110px;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}
+
 :root {
   --header-height: 5rem;
 }
@@ -59,6 +79,128 @@ a:hover {
   opacity: 0.8;
 }
 
+.btn--white, .btn--transparent {
+  width: 9rem;
+  height: 3rem;
+}
+
+.btn--white {
+  background-color: white;
+  color: #ff525d;
+}
+
+.btn--transparent {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+:root {
+  --header-height: 5rem;
+}
+
+.header {
+  width: 100%;
+  padding-top: calc(var(--header-height) + 2rem);
+  height: 64vh;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff8f70), to(#ff3d54));
+  background: linear-gradient(to right bottom, #ff8f70, #ff3d54);
+}
+
+.header__img {
+  position: relative;
+  background-image: url(../../../images/bg-pattern-intro.svg);
+  min-height: 76rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -18rem;
+  background-position-y: -18rem;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 21%;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.header__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__text--title {
+  color: white;
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 330px) {
+  .header__text--title {
+    font-size: 1.8rem;
+  }
+}
+
+.header__text--description {
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.125rem;
+  margin-top: 1rem;
+}
+
+.header__btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3rem;
+}
+
+.header__btn-box button:last-child {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 330px) {
+  .header__btn-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__btn-box button {
+    margin: 0.5rem;
+  }
+  .header__btn-box button:last-child {
+    margin-left: 0.5rem;
+  }
+}
+
 :root {
   --header-height: 5rem;
 }
@@ -71,9 +213,8 @@ a:hover {
 }
 
 .navigation {
-  background-color: #ff525d;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 100;

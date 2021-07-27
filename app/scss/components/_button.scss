@@ -4,6 +4,7 @@
   font-size: 1.125rem;
   font-weight: $font-bold;
   border-radius: 10rem;
+  // padding: 1rem 1.5rem;
 
   &--gradient {
     padding: 1.125rem 3rem;
@@ -17,5 +18,22 @@
     &:hover {
       opacity: 0.8;
     }
+  }
+
+  &--white,
+  &--transparent {
+    width: 9rem;
+    height: 3rem;
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $light-red;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: $color-white;
+    border: 1px solid $color-white;
   }
 }
