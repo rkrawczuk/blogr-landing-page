@@ -101,20 +101,21 @@ button {
 
 .header {
   width: 100%;
-  padding-top: calc(var(--header-height) + 2rem);
-  height: 64vh;
+  height: 74vh;
   background: -webkit-gradient(linear, left top, right bottom, from(#ff8f70), to(#ff3d54));
   background: linear-gradient(to right bottom, #ff8f70, #ff3d54);
+  -webkit-clip-path: inset(0 round 0 0 0 6rem);
+          clip-path: inset(0 round 0 0 0 6rem);
 }
 
 .header__img {
   position: relative;
   background-image: url(../../../images/bg-pattern-intro.svg);
-  min-height: 76rem;
+  min-height: 84rem;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: -18rem;
-  background-position-y: -18rem;
+  background-position-x: 35%;
+  background-position-y: -17rem;
 }
 
 .header__container {

@@ -2,22 +2,27 @@
 
 .header {
   width: 100%;
-  padding-top: calc(var(--header-height) + 2rem);
-  height: 64vh;
+  // padding-top: calc(var(--header-height) + 2rem);
+  // height: 64vh;
+  height: 74vh;
   background: linear-gradient(
     to right bottom,
     $gradient-very-light-red,
     $gradient-light-red
   );
   // clip-path: circle(70% at 70% 50%);
+  clip-path: inset(0 round 0 0 0 6rem);
   &__img {
     position: relative;
     background-image: url(../../../images/bg-pattern-intro.svg);
-    min-height: 76rem;
+    // min-height: 94rem;
+    min-height: 84rem;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: -18rem;
-    background-position-y: -18rem;
+    // background-position-x: -24rem;
+    // background-position-y: -18rem;
+    background-position-x: 35%;
+    background-position-y: -17rem;
   }
 
   &__container {
